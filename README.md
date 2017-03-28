@@ -2,7 +2,7 @@
 
 # Intro
 
-####Periodic Ping
+#### Periodic Ping
 _Stand-alone node task that sends out periodic HTTP requests to keep servers awake._
 
 - Sets up a setInterval task that will 'ping' a server (send an HTTP GET request) every so often
@@ -37,7 +37,7 @@ Pre-ES6 syntax will still work:
 var ping = require('periodic-ping').ping;
 ```
 
-###Base case
+### Base case
 Call with only an appName parameter supplied:
 ```JS
 ping({appName: "abc123dummyHerokuDomainName"});// will take the default 'frequency' variable of 300000 (every 5 minutes)
@@ -45,7 +45,7 @@ ping({appName: "abc123dummyHerokuDomainName"});// will take the default 'frequen
 ping({appName: "abc123dummyHerokuDomainName", frequency: 60000});// will override the default and use the specified frequency
 ```
 
-###Advanced case
+### Advanced case
 Define a config object...
 ```JS
 const myPingConfig = {
