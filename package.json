@@ -1,6 +1,6 @@
 {
   "name": "periodic-ping",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Stand-alone node task that sends out periodic HTTP requests to keep servers awake.",
   "main": "./dist/app.js",
   "jsnext:main": "./src/app.js",
@@ -8,6 +8,10 @@
     "test": "babel-node test/harness.js",
     "build": "babel src --presets babel-preset-es2015 --out-dir dist",
     "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JoeCostanzo/periodic-ping"
   },
   "keywords": [
     "heroku",
