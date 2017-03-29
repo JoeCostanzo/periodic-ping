@@ -41,14 +41,14 @@ const createInterval = opts => {
           // All checks complete, perform the case for when a wake schedule is properly defined
           console.log(msgs[3]);
           return setInterval(() => {
-              const curTime = moment(Date.now()).format();
-          if (
-            moment(curTime).isBetween(wake, sleep)
-            || moment(wake).isAfter(sleep) && moment(curTime).isAfter(wake)
-          ) {
-            sendRequest(opts.appName);
-          }
-        }, opts.frequency);
+            const curTime = moment(Date.now()).format();
+            if (
+              moment(curTime).isBetween(wake, sleep)
+              || moment(wake).isAfter(sleep) && moment(curTime).isAfter(wake)
+            ) {
+              sendRequest(opts.appName);
+            }
+          }, opts.frequency);
         }
         err(0);
       }
