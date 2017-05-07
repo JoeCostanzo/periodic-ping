@@ -1,6 +1,6 @@
 {
   "name": "periodic-ping",
-  "version": "1.0.333",
+  "version": "2.0.0",
   "description": "Stand-alone node task that sends out periodic HTTP requests to keep servers awake.",
   "main": "./dist/app.js",
   "jsnext:main": "./src/app.js",
